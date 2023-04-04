@@ -1,0 +1,23 @@
+.bankist__feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 4px #22222248;
+  height: 100%;
+}
+.bankist__feature-circle {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: var(--color-green-fade);
+}
+.bankist__feature h2 {
+  color: var(--color-main);
+}
+.bankist__feature p {
+  color: var(--color-text);
+}

@@ -1,0 +1,79 @@
+.bankist__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-family);
+  color: var(--font-main);
+  padding: 1.5rem 5rem;
+}
+.bankist__navbar-image {
+  width: 8.5rem;
+  height: 2.7rem;
+}
+.bankist__navbar-image img {
+  width: 100%;
+  height: 100%;
+}
+.bankist__navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+.bankist__navbar-links button {
+  background: var(--color-green);
+  border: none;
+  outline: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 1.2rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+.bankist__navbar-dropdown {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: none;
+}
+.bankist__navbar-dropdown svg {
+  cursor: pointer;
+}
+.bankist__navbar-dropdown_links {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  box-shadow: 0 4px 4px #44444447;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: #f3f3f3;
+  z-index: 20;
+}
+.bankist__navbar-dropdown_links button {
+  background: var(--color-green);
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 14px;
+  cursor: pointer;
+}
+@media screen and (max-width: 850px) {
+  .bankist__navbar-dropdown {
+    display: flex;
+  }
+  .bankist__navbar-links {
+    display: none;
+  }
+}
+@media screen and (max-width: 350px) {
+  .bankist__navbar {
+    padding: 1.5rem 3rem;
+  }
+}
