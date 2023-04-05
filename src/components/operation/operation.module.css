@@ -1,0 +1,72 @@
+.bankist__operation {
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  font-family: var(--font-family);
+}
+.bankist__operation h2,
+.bankist__operation p {
+  grid-column: 2;
+}
+.bankist__operation h2 {
+  color: var(--color-main);
+}
+.bankist__operation p {
+  color: var(--color-text);
+}
+.bankist__operation-circle {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  grid-column: 1;
+}
+@media screen and (max-width: 850px) {
+  .bankist__operation {
+    grid-template-columns: 1fr;
+    row-gap: 0.5rem;
+  }
+  .bankist__operation h2,
+  .bankist__operation p,
+  .bankist__operation-circle {
+    grid-column: 1;
+  }
+  .bankist__operation-circle {
+    width: 4rem;
+    height: 4rem;
+  }
+  .bankist__operation h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .bankist__operation p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .bankist__operation-circle {
+    width: 2rem;
+    height: 2rem;
+  }
+  .bankist__operation h2 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .bankist__operation p {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .bankist__operation-circle {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .bankist__operation h2 {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .bankist__operation p {
+    font-size: 8px;
+  }
+}

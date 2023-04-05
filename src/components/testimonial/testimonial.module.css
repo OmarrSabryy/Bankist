@@ -1,0 +1,61 @@
+.bankist__testimonial {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 6rem 1fr;
+  row-gap: 2rem;
+  font-family: var(--font-family);
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+.bankist__testimonial-qoute {
+  grid-column: 1;
+  width: 5rem;
+  height: 6rem;
+  color: var(--color-green);
+}
+.bankist__testimonial h2 {
+  align-self: flex-end;
+  font-weight: 600;
+  color: var(--color-main);
+}
+.bankist__testimonial p {
+  font-weight: 400;
+  color: var(--color-text);
+}
+.bankist__testimonial h2,
+.bankist__testimonial p,
+.bankist__testimonial-author {
+  grid-column: 2;
+}
+.bankist__testimonial-author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+.bankist__testimonial-author_image {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+}
+.bankist__testimonial-author_image img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.bankist__testimonial-author_desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.bankist__testimonial-author_desc h3 {
+  color: var(--color-main);
+}
+.bankist__testimonial-author_desc p {
+  color: var(--color-text);
+}

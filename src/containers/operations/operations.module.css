@@ -1,0 +1,144 @@
+.bankist__operations {
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: var(--font-family);
+  padding: 2rem 5rem;
+  gap: 6rem;
+  border-bottom: 1px solid var(--color-green-fade);
+}
+.bankist__operations-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: var(--font-family);
+  gap: 1rem;
+}
+.bankist__operations-heading h3 {
+  color: var(--color-green);
+  font-weight: 600;
+}
+.bankist__operations-heading h1 {
+  color: var(--color-main);
+  font-weight: 600;
+  font-size: 40px;
+}
+.bankist__operations-operation {
+  background: #fff;
+  padding: 6rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.bankist__operations-operation_type {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: absolute;
+  top: -1.9rem;
+  font-weight: 500;
+}
+.bankist__operations-operation_type div {
+  padding: 1rem 3.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.bankist__operations-operation_type :first-child {
+  background: var(--color-yellow);
+}
+.bankist__operations-operation_type :nth-child(2) {
+  background: var(--color-green);
+}
+.bankist__operations-operation_type :last-child {
+  background: var(--color-red);
+}
+.operation-clicked {
+  transform: translateY(-0.5rem);
+}
+@media screen and (max-width: 850px) {
+  .bankist__operations-operation {
+    position: static;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+  .bankist__operations-operation_type {
+    position: static;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    top: unset;
+    gap: 1rem;
+  }
+  .bankist__operations-operation_type div {
+    padding: 0.5rem 1rem;
+    font-size: 11px;
+  }
+  .operation-clicked {
+    transform: translateX(-0.5rem);
+  }
+  .bankist__operations-heading h3 {
+    font-size: 18px;
+  }
+  .bankist__operations-heading h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .bankist__operations {
+    padding: 2rem 3rem;
+  }
+  .bankist__operations-heading h3 {
+    font-size: 14px;
+  }
+  .bankist__operations-heading h1 {
+    font-size: 25px;
+  }
+  .bankist__operations-operation {
+    position: relative;
+  }
+  .bankist__operations-operation_type {
+    position: absolute;
+    top: -0.5rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .bankist__operations-operation_type div {
+    padding: 0.2rem 0.3rem;
+    font-size: 8px;
+    font-weight: 400;
+  }
+  .operation-clicked {
+    transform: translateY(-0.2rem);
+  }
+}
+@media screen and (max-width: 350px) {
+  .bankist__operations-heading h3 {
+    font-size: 10px;
+  }
+  .bankist__operations-heading h1 {
+    font-size: 18px;
+  }
+
+  .bankist__operations-operation_type {
+    transform-origin: left;
+    transform: rotate(90deg);
+    top: -0.9rem;
+    left: -0.5rem;
+    width: 250px;
+  }
+  .bankist__operations-operation_type div {
+    padding: 0.1rem 0.2rem;
+    font-size: 8px;
+    font-weight: 400;
+    gap: 0.1rem;
+  }
+  .operation-clicked {
+    transform: translateY(0.3rem);
+  }
+}

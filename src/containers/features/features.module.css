@@ -13,7 +13,7 @@
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: 2rem;
-  padding: 0 10rem;
+  /* padding: 0 10rem; */
 }
 .bankist__features-heading h3 {
   color: var(--color-green);
@@ -42,5 +42,31 @@
 }
 .bankist__features-feature_desc {
   height: 100%;
+  width: 100%;
   flex: 1;
+}
+@media screen and (max-width: 990px) {
+  .bankist__features-heading h1 {
+    font-size: 30px;
+  }
+  .bankist__features-feature {
+    gap: 1em;
+  }
+}
+@media screen and (max-width: 750px) {
+  .bankist__features-heading h1 {
+    font-size: 25px;
+  }
+  .bankist__features-feature {
+    flex-direction: column-reverse;
+    gap: 0em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .bankist__features {
+    padding: 4rem 3rem;
+  }
+  .bankist__features-heading h1 {
+    font-size: 18px;
+  }
 }

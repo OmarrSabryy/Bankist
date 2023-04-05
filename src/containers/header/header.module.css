@@ -68,3 +68,17 @@
     font-size: 10px;
   }
 }
+@media screen and (max-width: 450px) {
+  .bankis__header {
+    padding: 2rem 3rem;
+  }
+  .bankis__header-heading h1 {
+    font-size: 20px;
+  }
+  .bankis__header-heading h3 {
+    font-size: 10px;
+  }
+  .bankis__header-heading a {
+    font-size: 8px;
+  }
+}

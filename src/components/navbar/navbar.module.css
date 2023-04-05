@@ -72,6 +72,12 @@
     display: none;
   }
 }
+@media screen and (max-width: 450px) {
+  .bankist__navbar {
+    padding: 1.5rem 3rem;
+  }
+}
+
 @media screen and (max-width: 350px) {
   .bankist__navbar {
     padding: 1.5rem 3rem;

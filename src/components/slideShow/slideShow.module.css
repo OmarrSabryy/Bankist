@@ -1,0 +1,42 @@
+.bankist__slideShow {
+  display: grid;
+  grid-template-rows: 1fr 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.bankist__slideShow-actions {
+  grid-row: 1;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 6rem 1fr 6rem;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.bankist__slideShow-controls {
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bbankist__slideShow-actions_arrowLeft {
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bankist__slideShow-actions_arrowRight {
+  grid-column: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.bankist__slideShow-actions_slides {
+  display: flex;
+  /* position: relative; */
+  grid-column: 2;
+  /* overflow: hidden; */
+}

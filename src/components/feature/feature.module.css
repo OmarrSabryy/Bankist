@@ -8,6 +8,7 @@
   border-radius: 0.5rem;
   box-shadow: 0 4px 4px #22222248;
   height: 100%;
+  width: 100%;
 }
 .bankist__feature-circle {
   width: 3.5rem;
@@ -20,4 +21,31 @@
 }
 .bankist__feature p {
   color: var(--color-text);
+}
+@media screen and (max-width: 990px) {
+  .bankist__feature {
+    padding: 1rem;
+  }
+  .bankist__feature-circle {
+    width: 3rem;
+    height: 3rem;
+  }
+  .bankist__feature h2 {
+    font-size: 20px;
+  }
+  .bankist__feature p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .bankist__feature-circle {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .bankist__feature h2 {
+    font-size: 18px;
+  }
+  .bankist__feature p {
+    font-size: 10px;
+  }
 }
