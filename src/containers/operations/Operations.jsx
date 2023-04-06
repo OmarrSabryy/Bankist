@@ -32,7 +32,10 @@ const Operations = () => {
     }
   };
   return (
-    <div className={`${classes["bankist__operations"]} section`}>
+    <div
+      className={`${classes["bankist__operations"]} section`}
+      id="operations"
+    >
       <div className={classes["bankist__operations-heading"]}>
         <h3>OPERATIONS</h3>
         <h1>Everything as simple as possible, but no simpler.</h1>

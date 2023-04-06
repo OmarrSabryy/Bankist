@@ -1,0 +1,63 @@
+.bankist__footer {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 5rem;
+  min-height: 100vh;
+  background: var(--color-footer);
+  font-family: var(--font-family);
+  color: var(--color-text);
+}
+.bankist__footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+.bankist__footer-nav_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.bankist__footer-nav_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+}
+.bankist__footer-nav_image img {
+  width: 100%;
+  height: 100%;
+}
+.bankist__footer-nav p {
+  font-size: 12px;
+}
+.bankist__footer-nav p span {
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  .bankist__footer-nav_links {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .bankist__footer {
+    padding: 2rem 3rem;
+  }
+  .bankist__footer-nav_image {
+    width: 2rem;
+    height: 2rem;
+  }
+  .bankist__footer-nav_links {
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  .bankist__footer-nav p {
+    font-size: 10px;
+  }
+}

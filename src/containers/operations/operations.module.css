@@ -57,6 +57,7 @@
 }
 .operation-clicked {
   transform: translateY(-0.5rem);
+  transition: 0.6s;
 }
 @media screen and (max-width: 850px) {
   .bankist__operations-operation {

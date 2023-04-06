@@ -1,0 +1,44 @@
+.bankist__testimonials {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 5rem;
+  gap: 1rem;
+  border-bottom: 1px solid var(--color-green-fade);
+}
+.bankist__testimonials-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-family: var(--font-family);
+}
+.bankist__testimonials-heading h3 {
+  color: var(--color-green);
+  font-weight: 600;
+}
+.bankist__testimonials-heading h1 {
+  color: var(--color-main);
+  font-weight: 600;
+}
+@media screen and (max-width: 850px) {
+  .bankist__testimonials-heading h3 {
+    font-size: 18px;
+  }
+  .bankist__testimonials-heading h1 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .bankist__testimonials {
+    padding: 2rem 3rem;
+  }
+  .bankist__testimonials-heading h3 {
+    font-size: 12px;
+  }
+  .bankist__testimonials-heading h1 {
+    font-size: 18px;
+  }
+}

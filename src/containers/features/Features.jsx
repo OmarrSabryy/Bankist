@@ -5,7 +5,7 @@ import Digital from "../../assets/digital.jpg";
 import Grow from "../../assets/grow.jpg";
 const Features = () => {
   return (
-    <div className={`${classes["bankist__features"]} section`}>
+    <div className={`${classes["bankist__features"]} section`} id="features">
       <div className={classes["bankist__features-heading"]}>
         <h3>Features</h3>
         <h1>Everything you need in a modern bank and more.</h1>

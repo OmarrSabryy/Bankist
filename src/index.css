@@ -11,6 +11,7 @@
   --color-yellow-fade: #ffcd0331;
   --color-red-fade: #ff58602d;
   --gradient-text: linear-gradient(to top left, #39b385, #9be15d);
+  --color-footer: #37383d;
 }
 * {
   margin: 0;
@@ -28,6 +29,19 @@ a {
 ul {
   list-style: none;
 }
+/* scrol-bar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+  padding: 0.2rem;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888888b9;
+  border-radius: 0.5rem;
+}
+
 /* dropdown menu animation */
 .slide-top {
   -webkit-animation: slide-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
